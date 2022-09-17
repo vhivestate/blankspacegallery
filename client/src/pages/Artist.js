@@ -13,6 +13,7 @@ function Artist() {
         <div className='Avatar'>
             <img src={Garrett}></img>
         </div>
+        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">VIEW PORTFOLIO</button>
       </div>
 
       <div className='artist2'>
@@ -20,6 +21,7 @@ function Artist() {
         <div className='Avatar2'>
             <img src={David}></img>
         </div>
+        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">VIEW PORTFOLIO</button>
       </div>
     </div>
   )
