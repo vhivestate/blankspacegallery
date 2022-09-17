@@ -8,8 +8,13 @@
   font-family: 'GFS Didot', serif;
 }
 
+/* about section  */
 .about {
   text-align: center;
+}
+
+.about img {
+  padding: 40px
 }
 
 .artists {
