@@ -38,6 +38,8 @@ function Home() {
         <h1>GUEST ARTISTS</h1>
         <div className='guest'>
             <h2>@OG_SLOWDEATH</h2>
+            <h2>11/01/2022 - 11/20/2022</h2>
+
                 <div className='guest'>
                 <img src={ogSlow}></img>
             </div>

@@ -32,6 +32,11 @@
   text-align: center;
 }
 
+/* footer styling */
 footer p {
   text-align: center;
+}
+
+.copyright {
+  font-size: xx-small;
 }

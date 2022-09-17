@@ -1,8 +1,10 @@
 import React from 'react'
+import { Instagram } from 'react-feather';
 
 function Footer() {
   return (
     <footer className="footer p-10 bg-base-200 text-base-content">
+        <div></div>
         <div className="form-control w-80">
             <span className="footer-title">Newsletter</span> 
             <label className="label">
@@ -16,14 +18,21 @@ function Footer() {
 
         <div>
           <span className="footer-title">LOCATION</span> 
-            <p>298 24th Street, Ogden, UT</p>
+          <a href='https://www.google.com/maps/place/298+24th+St,+Ogden,+UT+84401/@41.2231142,-111.9759563,17z/data=!3m1!4b1!4m5!3m4!1s0x87530eddcff562c5:0x9db09706d47bc5a6!8m2!3d41.2231142!4d-111.9737676'>298 24th Street, Ogden, UT, 84401 </a>
         </div>
 
         <div>
           <span className="footer-title">CONTACT</span> 
             <p>blankspacegalleryllc@gmail.com</p>
+            <a href='https://www.instagram.com/blankspacegallery/'><Instagram></Instagram></a>
         </div>
+
+        <div className='copyright'>
+            <p>Copyright © 2022 - All right reserved by Blank Space Gallery LLC </p>
+        </div>
+
     </footer>
+    
   )
 }
 
