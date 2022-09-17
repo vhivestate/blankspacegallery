@@ -1,25 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import React, {useState} from 'react'
+import Artist from "./pages/Artist"
+import Contact from "./pages/Contact"
+import Guest from "./pages/Guest"
+import Gallery from './pages/Gallery';
+import Nav from "./components/Nav"
+import Home from './pages/Home';
+import Footer from './components/Footer';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState(0)
+
+  function displayPage(){
+    if(currentPage === 0){
+      return <Home></Home>;
+    }else if(currentPage === 1){
+      return <Artist></Artist>
+    }else if (currentPage === 2){
+      return <Guest></Guest>
+    } else if (currentPage === 3) {
+      return <Gallery></Gallery>
+    }
+    else {
+      return <Contact></Contact>
+    }
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Nav setCurrentPage={setCurrentPage}/>
+      {displayPage()}
+    <main>
+      <Footer></Footer>
+    </main>
+    </>
+  )
 }
 
-export default App;
+export default App
