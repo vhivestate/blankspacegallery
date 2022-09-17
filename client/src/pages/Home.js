@@ -5,24 +5,25 @@ import ogSlow from '../assets/guest.jpg'
 
 function Home() {
   return (
-    <div>
+    <div className='home'>
         <div className='about'>
         <h1>ABOUT US</h1>
             <p>Blank Space is a bridge between the world of tattooing and the walls of a gallery. We aim to merrge these to industries to form a create space that is both thought provoking for the public as well as, theraputic for the clientel. When brought together they fill the black space.
             </p>
         </div>
         
+    <div className='artists'>
     <div className="footer p-10 bg-base-200 text-base-content">
-      <div className='artists'>
-     <h1>ARTISTS</h1>
-      <div className='artist1'>
+        <div>
+            <div className='artist1'>
+            <h1>ARTISTS</h1>
         <h2>Garrett Smith</h2>
         <div className='Avatar'>
             <img src={Garrett}></img>
         </div>
         <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">VIEW PORTFOLIO</button>
       </div>
-    </div>
+   
 
     <div className='artist2'>
         <h2>David Carter</h2>
@@ -31,11 +32,10 @@ function Home() {
         </div>
         <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">VIEW PORTFOLIO</button>
       </div>
-      
-    </div>
 
-    <div>
-        <h2>GUEST ARTISTS</h2>
+    <div className="guest">
+    <div className="divider"></div> 
+        <h1>GUEST ARTISTS</h1>
         <div className='guest'>
             <h2>@OG_SLOWDEATH</h2>
                 <div className='guest'>
@@ -44,7 +44,11 @@ function Home() {
             <a href='https://www.instagram.com/og_slowdeath/'>
             <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">VIEW WORK</button></a>
         </div>
+        </div>
+      </div>
+      </div>
     </div>
+
     </div>
   )
 }
