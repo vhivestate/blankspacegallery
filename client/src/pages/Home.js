@@ -28,17 +28,18 @@ function Home() {
             <p>Blank Space is a bridge between the world of tattooing and the walls of a gallery. We aim to merrge these to industries to form a create space that is both thought provoking for the public as well as, theraputic for the clientel. When brought together they fill the black space.
             </p>
         </div>
-
-        <h1>ARTISTS</h1>
+        <div className="divider"></div> 
 
         {/* Garrett Sectiom */}
     <div id='artists' className='artists'>
-    <div className="footer p-10 bg-base-200 text-base-content">
+    <h1>ARTISTS</h1>
+    <div className='artist'>
         <div>
-        <div className="card lg:card-side bg-base-100 shadow-xl">
+        <div className="card lg:card-side bg-base-100 shadow-xl ">
         <figure><img src={Garrett} alt="Album"/></figure>
         <div className="card-body">
-            <h2 className="card-title">@HAMDOESNTMATTER</h2>
+        <h2 className="card-title">@HAMDOESNTMATTER</h2>
+
             <p>Click the button to listen on Spotiwhy app.</p>
 
             <div className="carousel h-fit w-full">
@@ -82,11 +83,10 @@ function Home() {
 </div>
 
 {/* Davids section */}
-
     <div className="card lg:card-side bg-base-100 shadow-xl">
     <figure><img src={David} alt="Album"/></figure>
     <div className="card-body">
-        <h2 className="card-title">@THEPHATDAVE</h2>
+    <h2 className="card-title">@THEPHATDAVE</h2>
         <p>Click the button to listen on Spotiwhy app.</p>
 
         <div className="carousel h-fit w-full">
@@ -139,7 +139,7 @@ function Home() {
                 <img src={ogSlow} alt="Shoes" className="rounded-xl" />
             </figure>
             <div className="card-body items-center text-center">
-                <h2 className="card-title">@OG_SLOWDEATH</h2>
+            <h2 className="card-title">@OG_SLOWDEATH</h2>
                 <p>11/01/2022 - 11/20/2022</p>
                 <div className="card-actions">
                 <a href='https://www.instagram.com/og_slowdeath/'>
