@@ -42,17 +42,36 @@ function Contact() {
         <section className='Form'>
           <h1 className='mail'>CONTACT US</h1>
           <form className='contactForm' action="" id="contact-form" onSubmit={handleSubmit}>
+        
             <div>
-              <label htmlFor="name"></label>
-              <input type="text" name="name" defaultValue={name} onBlur={handleChange} placeholder="Name"/>
+                <label htmlFor="name" className="label">
+                    <span className="label-text">What is your name?</span>
+                </label>
+                <input type="text" name="name" placeholder="Type here" defaultValue={name} onBlur={handleChange}  className="input input-bordered w-full max-w-xs" />
             </div>
+
+
             <div>
-              <label htmlFor="email"></label>
-              <input type="email" name="email" defaultValue={email} onBlur={handleChange} placeholder="Email Address"/>
+              <label htmlFor="email" className="label">
+              <span className="label-text">Email Address</span>
+              </label>
+              <input type="email" name="email" defaultValue={email} onBlur={handleChange} placeholder="Email Address" className="input input-bordered w-full max-w-xs"/>
             </div>
+
+            <div>
+            <label htmlFor="inquiry" className="label">
+              <span className="label-text">Inquiry Type</span>
+              </label>
+              <select className="select select-bordered w-full max-w-xs">
+                <option disabled selected>Type of inquiry?</option>
+                <option>Guest Artist</option>
+                <option>Gallery</option>
+              </select>
+            </div>
+
             <div>
               <label htmlFor="message"></label>
-              <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} placeholder="Your message"/>
+              <textarea className="textarea textarea-bordered" name="message" rows="5" defaultValue={message} onBlur={handleChange} placeholder="Type message here..."/>
             </div>
             {errorMessage && (
                 <div>
