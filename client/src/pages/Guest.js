@@ -7,7 +7,6 @@ import ogSlow from '../assets/og-slowdeath.jpg'
 function Guest() {
   return (
     <div className="guest">
-    <div className="divider"></div> 
         <h1>GUEST ARTISTS</h1>
         <div className="card w-96 bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
