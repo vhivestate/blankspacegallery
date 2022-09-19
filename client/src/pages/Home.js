@@ -4,24 +4,26 @@ import David from '../assets/avatar2.jpg'
 import ogSlow from '../assets/og-slowdeath.jpg'
 
 function Home() {
+
   return (
-    <div className='home'>
+    <main className='home'>
+    
         <div className='about'>
         <h1>ABOUT US</h1>
             <p>Blank Space is a bridge between the world of tattooing and the walls of a gallery. We aim to merrge these to industries to form a create space that is both thought provoking for the public as well as, theraputic for the clientel. When brought together they fill the black space.
             </p>
         </div>
         
-    <div className='artists'>
+    <div id='artists' className='artists'>
     <div className="footer p-10 bg-base-200 text-base-content">
         <div>
-            <div className='artist1'>
+            <div className='artist1' >
             <h1>ARTISTS</h1>
         <h2>Garrett Smith</h2>
         <div className='Avatar'>
             <img src={Garrett}></img>
         </div>
-        <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">VIEW PORTFOLIO</button>
+        <button type="submit" className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg" >VIEW PORTFOLIO</button>
       </div>
    
 
@@ -51,7 +53,8 @@ function Home() {
       </div>
     </div>
 
-    </div>
+    </main>
+   
   )
 }
 
