@@ -41,18 +41,6 @@ function Contact() {
     return (
         <section className='Form'>
           <h1 className='mail'>CONTACT US</h1>
-          <div className="form-control">
-            <label className="label cursor-pointer">
-                <span className="label-text">GUEST ARTIST INQUIRY</span> 
-                <input type="radio" name="radio-7" className="radio checked:bg-red-500" checked />
-            </label>
-            </div>
-            <div className="form-control">
-            <label className="label cursor-pointer">
-                <span className="label-text">GALLERY INQUIRY</span> 
-                <input type="radio" name="radio-7" className="radio checked:bg-blue-500" checked/>
-            </label>
-            </div>
           <form className='contactForm' action="" id="contact-form" onSubmit={handleSubmit}>
             <div>
               <label htmlFor="name"></label>
@@ -73,8 +61,6 @@ function Contact() {
                 )}
                 <button className="btn glass">Submit</button>
           </form>
-          {/* <img className='pngMail' src={mailPng}></img> */}
-          {/* <h3 className='connect'>Connect with me:</h3> */}
         </section>
         );
 
