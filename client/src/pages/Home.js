@@ -1,7 +1,7 @@
 import React from 'react'
 import Garrett from '../assets/avatar.jpg'
 import David from '../assets/avatar2.jpg'
-import ogSlow from '../assets/guest.jpg'
+import ogSlow from '../assets/og-slowdeath.jpg'
 
 function Home() {
   return (
