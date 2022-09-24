@@ -28,6 +28,7 @@
   padding: 30px;
 }
 
+/* cards */
 .artistCards {
   display: flex;
   flex-wrap: wrap;
@@ -35,7 +36,7 @@
 }
 
 .cards {
-  padding: 20px 0 30px;
+  padding: 25px;
 }
 
 /* footer styling */
