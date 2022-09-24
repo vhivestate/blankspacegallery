@@ -24,7 +24,7 @@ function Artist() {
 <div className="card w-96 glass">
   <figure><img src={David} alt="car!"/></figure>
   <div className="card-body">
-    <h2 className="card-title">DAVID CARTER</h2>
+    <h2 className="card-title">DAVID</h2>
     <div className="card-actions justify-end">
               <button className="btn btn-primary">View Portfolio</button>
              </div>

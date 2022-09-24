@@ -18,21 +18,21 @@ function Home() {
       
     <div id='allArtists' className='allArtists'>
     <h1>ARTISTS</h1>
-    <div className='artist'>
-        <div>
+    <div className='artistCards'>    
          {/* Garrett Sectiom */}
-         <div className="card w-96 glass">
-  <figure><img src={Garrett} alt="car!"/></figure>
-  <div className="card-body">
-    <h2 className="card-title">Garrett Smith</h2>
-   
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary">View Portfolio</button>
+    <div className='cards'>
+      <div className="card w-96 glass">
+        <figure><img src={Garrett} alt="car!"/></figure>
+      <div className="card-body">
+        <h2 className="card-title">Garrett Smith</h2>
+        <div className="card-actions justify-end">
+        <button className="btn btn-primary">View Portfolio</button>
+        </div>
+      </div>
     </div>
-  </div>
 </div>
-
 {/* Davids section */}
+<div className='cards'>
 <div className="card w-96 glass">
   <figure><img src={David} alt="car!"/></figure>
   <div className="card-body">
@@ -49,6 +49,7 @@ function Home() {
 
     <div className="guest">
         <h1>GUEST ARTISTS</h1>
+        <div className='artistCards'>
         <div className="card w-96 glass">
         <figure><img src={ogSlow} alt="car!"/></figure>
         <div className="card-body">
@@ -61,6 +62,7 @@ function Home() {
             </div>
         </div>
        </div>
+      </div>
       </div>
     </div>
 
