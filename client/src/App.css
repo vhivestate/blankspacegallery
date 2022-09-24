@@ -28,8 +28,14 @@
   padding: 30px;
 }
 
-.artists {
-  text-align: center;
+.artistCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cards {
+  padding: 30px 0 30px;
 }
 
 /* footer styling */
