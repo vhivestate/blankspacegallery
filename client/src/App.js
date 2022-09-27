@@ -8,32 +8,23 @@ import Nav from "./components/Nav"
 import Home from './pages/Home';
 import Footer from './components/Footer';
 
-function App() {
-  const [currentPage, setCurrentPage] = useState(0)
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-  function displayPage(){
-    if(currentPage === 0){
-      return <Home></Home>;
-    }else if(currentPage === 1){
-      return <Artist></Artist>
-    }else if (currentPage === 2){
-      return <Guest></Guest>
-    } else if (currentPage === 3) {
-      return <Gallery></Gallery>
-    }
-    else {
-      return <Contact></Contact>
-    }
-  }
+
+function App() {
 
   return (
-    <>
-      <Nav setCurrentPage={setCurrentPage}/>
-      {displayPage()}
-    <main>
-      <Footer></Footer>
-    </main>
-    </>
+    <Router>
+      <Nav/>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/artists" element={<Artist/>}/>
+        <Route path="/contact" element={<Contact/>}/>
+        <Route path="/guest" element={<Guest/>}/>
+        <Route path="/gallery" element={<Gallery/>}/>
+      </Routes>
+      <Footer/>
+    </Router>
   )
 }
 

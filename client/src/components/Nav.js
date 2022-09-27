@@ -1,7 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import '../App.css'
 
-function Nav(props) {
+function Nav() {
     return (
         <div className="navbar bg-base-100">
         <div className="navbar-start">
@@ -10,16 +11,15 @@ function Nav(props) {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
             </label>
             <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-            <li><button href='' onClick={() => props.setCurrentPage(0)}>Home</button></li>
-            <li><button href='' onClick={() => props.setCurrentPage(1)}>Artists</button></li>
-            <li><button href='' onClick={() => props.setCurrentPage(2)}>Guest Artists</button></li>
-            <li><button href='' onClick={() => props.setCurrentPage(3)}>Gallery</button></li>
-            <li><button href='' onClick={() => props.setCurrentPage(4)}>Contact</button></li>
+            <li><Link to={'/artists'}>Artists</Link></li>
+            <li><Link to={'/guest'}>Guest Artists</Link></li>
+            <li><Link to={'/gallery'}>Gallery</Link></li>
+            <li><Link to={'/contact'}>Contact</Link></li>
             </ul>
             </div>
         </div>
         <div className="navbar-center">
-            <button id='logo' className="btn btn-ghost normal-case text-xl">BLANKSPACE</button>
+            <Link id='logo' className="btn btn-ghost normal-case text-xl" to={'/'}>BLANKSPACE</Link>
         </div>
         <div className="navbar-end">
 
