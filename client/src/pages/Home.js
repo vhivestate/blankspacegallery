@@ -2,6 +2,8 @@ import React from 'react'
 import Garrett from '../assets/avatar.jpg'
 import David from '../assets/avatar2.jpg'
 import ogSlow from '../assets/og-slowdeath.jpg'
+import { Link } from 'react-router-dom';
+
 
 function Home() {
 
@@ -26,7 +28,7 @@ function Home() {
       <div className="card-body">
         <h2 className="card-title">Garrett Smith</h2>
         <div className="card-actions justify-end">
-        <button className="btn btn-primary">View Portfolio</button>
+        <button className="btn btn-primary"><Link to={'/garrett'}>View Portfolio</Link></button>
         </div>
       </div>
     </div>
@@ -39,7 +41,7 @@ function Home() {
     <h2 className="card-title">David Carter</h2>
    
     <div className="card-actions justify-end">
-      <button className="btn btn-primary">View Portfolio</button>
+      <button className="btn btn-primary"><Link to={'/david'}>View Portfolio</Link></button>
       </div>
       </div>
     </div>
