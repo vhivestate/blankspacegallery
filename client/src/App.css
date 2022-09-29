@@ -3,18 +3,27 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Merriweather:wght@700&display=swap');
 
 #logo {
   font-family: 'GFS Didot', serif;
   font-size: 33px;
   letter-spacing: 7px;
+  color: white;
 }
-
 /* Nav */
 nav {
   position: sticky;
   top: 0;
   z-index: 9999;
+}
+
+/* body */
+
+h1 {
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
 }
 /* about section  */
 .about {

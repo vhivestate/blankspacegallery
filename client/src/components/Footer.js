@@ -1,9 +1,10 @@
 import React from 'react'
 import { Instagram } from 'react-feather';
+import { Mail } from 'react-feather';
 
 function Footer() {
   return (
-    <footer className="footer p-10 bg-base-200 text-base-content">
+    <footer className="footer p-10 bg-black text-base-content">
         <div></div>
         <div className="form-control w-80">
             <span className="footer-title">Newsletter</span> 
@@ -12,7 +13,7 @@ function Footer() {
             </label> 
         <div className="relative">
             <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16" /> 
-            <button className="btn btn-primary absolute top-0 right-0 rounded-l-none">Subscribe</button>
+            <button className="btn btn-active btn-ghost absolute top-0 right-0 rounded-l-none">Subscribe</button>
           </div>
         </div>
 
@@ -23,7 +24,7 @@ function Footer() {
 
         <div>
           <span className="footer-title">CONTACT</span> 
-            <p>blankspacegalleryllc@gmail.com</p>
+          <a href="mailto:garcia.valeria001@gmail.com"> blankspacegallery@gmail.com </a>
             <a href='https://www.instagram.com/blankspacegallery/'><Instagram></Instagram></a>
         </div>
 
