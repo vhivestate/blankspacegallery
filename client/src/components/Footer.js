@@ -4,7 +4,7 @@ import { Mail } from 'react-feather';
 
 function Footer() {
   return (
-    <footer className="footer p-10 bg-black text-base-content">
+    <footer className="footer p-10 bg-[#171d22] text-whitet">
         <div></div>
         <div className="form-control w-80">
             <span className="footer-title">Newsletter</span> 
@@ -24,7 +24,7 @@ function Footer() {
 
         <div>
           <span className="footer-title">CONTACT</span> 
-          <a href="mailto:garcia.valeria001@gmail.com"> blankspacegallery@gmail.com </a>
+          <a href="mailto:blankspacegalleryllc@gmail.com"> blankspacegalleryllc@gmail.com </a>
             <a href='https://www.instagram.com/blankspacegallery/'><Instagram></Instagram></a>
         </div>
 
