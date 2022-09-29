@@ -4,7 +4,7 @@ import '../App.css'
 
 function Nav() {
     return (
-        <div className="navbar bg-base-100">
+        <nav className="navbar glass">
         <div className="navbar-start">
             <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost btn-circle">
@@ -24,7 +24,7 @@ function Nav() {
         <div className="navbar-end">
 
         </div>
-        </div>
+        </nav>
       )
     }
 

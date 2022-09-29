@@ -8,40 +8,44 @@ import { Link } from 'react-router-dom';
 function Home() {
 
   return (
-    <main className='home'>
-    
-        <div className='about'>
-        <h1>ABOUT US</h1>
-            <p>Blank Space is a bridge between the world of tattooing and the walls of a gallery. We aim to merrge these to industries to form a create space that is both thought provoking for the public as well as, theraputic for the clientel. When brought together they fill the black space.
+    <main className='bg-fixed	 bg-contain bg-top text-center' style={{ backgroundImage: `url("https://sat02pap005files.storage.live.com/y4mlCETQWKsEVEff_pKY-iHukXPYfeVaecejiIsnBg15ScpZ6dk1m47bMdigBLy7N21SQYo53cnPH9JfSz5-vw1OFve7TPKCH-5PRsc_46yTgw6uIDFWHOAoMV1sINQRV3o-0EHXO3l5iE-_cykX_XO5i6cCs5K0ipyfbunOmk1Buxa-38aanvCGx0NB-MRW8Kb?width=3024&height=4032&cropmode=none")` }}>
+
+<h1>ABOUT US</h1>
+    <div className='cards flex justify-center'>
+        <div id='about' className='about w-10/12 rounded-md glass '>
+            <p className='text-center	text-white '>Blank Space is a bridge between the world of tattooing and the walls of a gallery. We aim to merrge these to industries to form a create space that is both thought provoking for the public as well as, theraputic for the clientel. When brought together they fill the black space.
             </p>
+        </div>
         </div>
         <div className="divider"></div> 
 
       
     <div id='allArtists' className='allArtists'>
     <h1>ARTISTS</h1>
-    <div className='artistCards'>    
+    <div className='artistCards justify-center'>   
+
          {/* Garrett Sectiom */}
-    <div className='cards'>
-      <div className="card w-96 glass">
+    <div className='cards flex justify-center'>
+      <div className="card w-10/12 glass">
         <figure><img src={Garrett} alt="car!"/></figure>
-      <div className="card-body">
+      <div className="card-body bg-gray-900 opacity-25">
         <h2 className="card-title">Garrett Smith</h2>
-        <div className="card-actions justify-end">
-        <button className="btn btn-primary"><Link to={'/garrett'}>View Portfolio</Link></button>
+        <div className="card-actions justify-center">
+        <button className="btn btn-active btn-ghost"><Link to={'/garrett'}>View Portfolio</Link></button>
         </div>
       </div>
     </div>
 </div>
+
 {/* Davids section */}
-<div className='cards'>
-<div className="card w-96 glass">
+<div className='cards flex justify-center'>
+<div className="card w-10/12 glass">
   <figure><img src={David} alt="car!"/></figure>
-  <div className="card-body">
+  <div className="card-body bg-gray-900 opacity-25">
     <h2 className="card-title">David Carter</h2>
    
-    <div className="card-actions justify-end">
-      <button className="btn btn-primary"><Link to={'/david'}>View Portfolio</Link></button>
+    <div className="card-actions justify-center">
+      <button className="btn btn-active btn-ghost"><Link to={'/david'}>View Portfolio</Link></button>
       </div>
       </div>
     </div>
@@ -52,15 +56,18 @@ function Home() {
     <div className="guest">
         <h1>GUEST ARTISTS</h1>
         <div className='artistCards'>
-        <div className="card w-96 glass">
+
+        <div className='cards flex justify-center'>
+        <div className="card w-10/12 glass ">
         <figure><img src={ogSlow} alt="car!"/></figure>
-        <div className="card-body">
+        <div className="card-body bg-gray-900 opacity-25 ">
             <h2 className="card-title">@OG_SLOWDEATH</h2>
             <p>11/01/22 - 11/20/22</p>
             <div className="card-actions justify-end">
             <a href='https://www.instagram.com/og_slowdeath/'>
-                <button className="btn btn-primary">View Work</button>
+                <button className="btn btn-active btn-ghost">View Work</button>
                 </a>
+            </div>
             </div>
         </div>
        </div>
