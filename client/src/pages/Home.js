@@ -17,14 +17,15 @@ function Home() {
         <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
           <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-          <button className="btn btn-active btn-ghost hover:bg-gray-400">about us</button>
+          <button className="btn btn-active btn-ghost"> <a href='#about'>ABOUT US</a></button>
+
         </div>
       </div>
     </div>
 
-<h1>ABOUT US</h1>
+<h1 id='about'>ABOUT US</h1>
     <div className='cards flex justify-center'>
-        <div id='about' className='about w-10/12 rounded-md glass '>
+        <div  className='about w-10/12 rounded-md glass '>
             <p className='text-center	text-white '>Blank Space is a bridge between the world of tattooing and the walls of a gallery. We aim to merrge these to industries to form a create space that is both thought provoking for the public as well as, theraputic for the clientel. When brought together they fill the black space.
             </p>
         </div>
@@ -41,7 +42,7 @@ function Home() {
       <div className="card w-10/12 glass">
         <figure><img src={Garrett} alt="car!"/></figure>
       <div className="card-body text-white	">
-        <h2 className="card-title ">Garrett Smith</h2>
+        <h2 className="card-title justify-center">Garrett Smith</h2>
         <div className="card-actions justify-center">
         <button className="btn btn-active btn-ghost hover:bg-gray-400"><Link to={'/garrett'}>View Portfolio</Link></button>
         </div>
@@ -54,7 +55,7 @@ function Home() {
 <div className="card w-10/12 glass">
   <figure><img src={David} alt="car!"/></figure>
   <div className="card-body text-white	">
-    <h2 className="card-title">David Carter</h2>
+    <h2 className="card-title justify-center">David Carter</h2>
    
     <div className="card-actions justify-center">
       <button className="btn btn-active btn-ghost hover:bg-gray-400"><Link to={'/david'}>View Portfolio</Link></button>
@@ -73,11 +74,11 @@ function Home() {
         <div className="card w-10/12 glass ">
         <figure><img src={ogSlow} alt="car!"/></figure>
         <div className="card-body text-white ">
-            <h2 className="card-title text-center">@OG_SLOWDEATH</h2>
-            <p>11/01/22 - 11/20/22</p>
-            <div className="card-actions justify-end">
+            <h2 className="card-title justify-center">@OG_SLOWDEATH</h2>
+            <p j>11/01/22 - 11/20/22</p>
+            <div className="card-actions justify-center">
             <a href='https://www.instagram.com/og_slowdeath/'>
-                <button className="btn btn-active btn-ghost hover:bg-gray-400">View Work</button>
+                <button className="btn btn-active btn-ghost hover:bg-gray-400 ">View Work</button>
                 </a>
             </div>
             </div>
