@@ -1,7 +1,6 @@
 import './App.css';
 import React from 'react'
 import Artist from "./pages/Artist"
-import Contact from "./pages/Contact"
 import Guest from "./pages/Guest"
 import Gallery from './pages/Gallery';
 import Nav from "./components/Nav"
@@ -9,6 +8,7 @@ import Home from './pages/Home';
 import Footer from './components/Footer';
 import Garrett from './pages/Garrett';
 import David from './pages/David';
+import Contact from './pages/Contact'
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 

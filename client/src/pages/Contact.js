@@ -1,89 +1,85 @@
-import React, { useState } from 'react';
-import { validateEmail } from '../utils/helper';
+import { useState } from "react";
+import { validateEmail } from "../utils/helper.js";
 
-function Contact() {
+export const Contact = () => {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
     const { name, email, message } = formState;
     const [errorMessage, setErrorMessage] = useState('');
+    const [successMessage, setSuccessMessage] = useState('');
 
-    function handleChange(e) {
+    const handleChange = (e) => { 
+        setFormState({ ...formState, [e.target.name]: e.target.value });
+
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
-            console.log(isValid);
-            // isValid conditional statement
             if (!isValid) {
-                setErrorMessage('Your email is invalid.');
+                setErrorMessage('Please enter a valid email address.');
             } else {
                 if (!e.target.value.length) {
-                  setErrorMessage(`${e.target.name} is required.`);
-                } else {
-                  setErrorMessage('');
+                    setErrorMessage('Please enter an email address.');
                 }
-                //only updates if form passed quality
-                if (!errorMessage) {
-                    setFormState({ ...formState, [e.target.name]: e.target.value });
-                  }
-              }
-              console.log('errorMessage', errorMessage);
-          } 
-           
-         //get input values
-        setFormState({...formState, [e.target.name]: e.target.value })
-        // console.log(formState);
-      }
+                setErrorMessage('');
+            }
+            if(!errorMessage) {
+                setFormState({ ...formState, [e.target.name]: e.target.value });
+            }
+        }
+    }
 
-      //get input value when form is submitted
-      function handleSubmit(e) {
+    const emailForm = () => {
+        fetch("https://formsubmit.co/ajax/blankspacegalleryllc@gmail.com", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(formState)
+        })
+        .then(response => response.json())
+        .then(data => console.log(data))
+        .catch(error => console.log(error));
+    }
+
+    const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(formState);
-      }
+        emailForm();
+        // clear form
+        setFormState({ name: '', email: '', message: '' });
+        e.target.reset();
+        setSuccessMessage('Thank you for your message! I will get back to you as soon as possible.');
+        
+    }
 
     return (
-        <section className='Form'>
-          <h1 className='mail'>CONTACT US</h1>
-          <form className='contactForm' action="" id="contact-form" onSubmit={handleSubmit}>
-        
-            <div>
-                <label htmlFor="name" className="label">
-                    <span className="label-text">What is your name?</span>
-                </label>
-                <input type="text" name="name" placeholder="Type here" defaultValue={name} onBlur={handleChange}  className="input input-bordered w-full max-w-xs" />
-            </div>
-
-
-            <div>
-              <label htmlFor="email" className="label">
-              <span className="label-text">Email Address</span>
-              </label>
-              <input type="email" name="email" defaultValue={email} onBlur={handleChange} placeholder="Email Address" className="input input-bordered w-full max-w-xs"/>
-            </div>
-
-            <div>
-            <label htmlFor="inquiry" className="label">
-              <span className="label-text">Inquiry Type</span>
-              </label>
-              <select className="select select-bordered w-full max-w-xs">
-                <option disabled selected>Type of inquiry?</option>
-                <option>Guest Artist</option>
-                <option>Gallery</option>
-              </select>
-            </div>
-
-            <div>
-              <label htmlFor="message"></label>
-              <textarea className="textarea textarea-bordered" name="message" rows="5" defaultValue={message} onBlur={handleChange} placeholder="Type message here..."/>
-            </div>
-            {errorMessage && (
-                <div>
-                    <p className="error-text">{errorMessage}</p>
-                </div>
+        <div className="min-h-screen bg-base-50 flex flex-col items-center justify-center">
+            <h1 className="logo text-white text-center text-4xl">Contact Me</h1>
+            <div className="w-full py-6 md:w-4/6 my-6">
+                <form onSubmit={handleSubmit}>
+                <input type="hidden" name="_captcha" value="false"/>
+                <input type="text" name="name" placeholder="Name" defaultValue={name} onBlur={handleChange} className="input w-full my-2 bg-white" />
+            
+                <input type="text" name="email" defaultValue={email} onBlur={handleChange}  placeholder="Email" className="input w-full my-2 bg-white" />
+            
+                <textarea name="message" defaultValue={ message } onBlur={handleChange} className="textarea w-full bg-white my-2" placeholder="Message"></textarea>
+                {errorMessage && (
+                    <label class="label">
+                        <span className="label-text text-red-300">{errorMessage}</span>
+                    </label>
                 )}
-                <button className="btn glass">Submit</button>
-          </form>
-        </section>
-        );
+                
+                <input type="submit" className="btn btn-secondary w-full" value={"Submit"}/>
+                </form>
+                {successMessage && (
+                    <div className="alert alert-success shadow-lg my-4">
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" className="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                      <span>{successMessage}</span>
+                    </div>
+                  </div>
+                )}
+            </div>
+        </div>
+    );
+}
 
-    // JSX
-    }
-    
-    export default Contact;
+export default Contact
