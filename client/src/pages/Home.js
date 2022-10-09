@@ -17,8 +17,7 @@ function Home() {
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md space-x-4">
           <h1 className="mb-5 text-5xl font-bold">BLANK SPACE GALLERY</h1>
-          <p className="mb-5">Bridging the gap between tattoo and fine art.
-</p>
+          <p className="mb-5">Bridging the gap between tattoo and fine art.</p>
           <button className="btn btn-active btn-ghost space-x-4"> <a href='#about'>TATTOO </a></button>
 
           <div className='pt-3'>
@@ -32,7 +31,7 @@ function Home() {
 
 <h1 id='about'>ABOUT US</h1>
     <div className='cards flex justify-center'>
-        <div  className='about w-10/12 rounded-md glass '>
+        <div  className='about w-10/12 rounded-md bg-gray-900 '>
         <h2 className='text-white'>Meshing the worlds of fine art & tattooing</h2>
             <p className='text-center	text-white '>Blank Space is a dynamic, community-forward fine art gallery and tattoo studio. We curate thought-provoking works spanning a wide array of subject matter and mediums in a comfortable environment for clientele. Like an empty canvas, Blank Space represents limitless creative potential. 
             </p>
@@ -47,7 +46,7 @@ function Home() {
 
          {/* Garrett Sectiom */}
     <div className='cards flex justify-center'>
-      <div className="card w-10/12 glass">
+      <div className="card w-10/12 bg-gray-900">
         <figure><img src={Garrett} alt="car!"/></figure>
       <div className="card-body text-white	">
         <h2 className="card-title justify-center">Garrett Smith</h2>
@@ -60,7 +59,7 @@ function Home() {
 
 {/* Davids section */}
 <div className='cards flex justify-center'>
-<div className="card w-10/12 glass">
+<div className="card w-10/12 bg-gray-900">
   <figure><img src={David} alt="car!"/></figure>
   <div className="card-body text-white	">
     <h2 className="card-title justify-center">David Carter</h2>
@@ -73,7 +72,7 @@ function Home() {
   </div>
 
   <div className='cards flex justify-center'>
-<div className="card w-10/12 glass">
+<div className="card w-10/12 bg-gray-900">
   <figure><img src={Campbell} alt="car!"/></figure>
   <div className="card-body text-white	">
     <h2 className="card-title justify-center">Campbell</h2>
@@ -95,7 +94,7 @@ function Home() {
         <div className='artistCards'>
 
         <div className='cards flex justify-center'>
-        <div className="card w-10/12 glass ">
+        <div className="card w-10/12 bg-gray-900 ">
         <figure><img src={ogSlow} alt="car!"/></figure>
         <div className="card-body text-white ">
             <h2 className="card-title justify-center">@OG_SLOWDEATH</h2>

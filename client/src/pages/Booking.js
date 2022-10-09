@@ -44,7 +44,7 @@ export const Booking = () => {
         e.preventDefault();
         emailForm();
         // clear form
-        setFormState({ name: '', email: '', message: '' });
+        setFormState({ age: '', name: '', email: '', artist: '', message: '' });
         e.target.reset();
         setSuccessMessage('Thank you for your message! I will get back to you as soon as possible.');
         
@@ -58,13 +58,13 @@ export const Booking = () => {
                 <form onSubmit={handleSubmit}>
                 <input type="hidden" name="_captcha" value="false"/>
 
-                <input type="text" name="email" defaultValue={age} onBlur={handleChange}  placeholder="What is your age?" className="input w-full my-2 bg-white" />
+                <input type="text" name="age" defaultValue={age} onBlur={handleChange}  placeholder="What is your age?" className="input w-full my-2 bg-white" />
 
                 <input type="text" name="name" placeholder="First and Last Name" defaultValue={name} onBlur={handleChange} className="input w-full my-2 bg-white" />
             
                 <input type="text" name="email" defaultValue={email} onBlur={handleChange}  placeholder="Email" className="input w-full my-2 bg-white" />
 
-                <input type="text" name="name" placeholder="Name of Preferred Artist" defaultValue={artist} onBlur={handleChange} className="input w-full my-2 bg-white" />
+                <input type="text" name="artist" placeholder="Name of Preferred Artist" defaultValue={artist} onBlur={handleChange} className="input w-full my-2 bg-white" />
             
                 <textarea name="message" defaultValue={ message } onBlur={handleChange} className="textarea w-full bg-white my-2" placeholder="Brief description of tattoo idea and style"></textarea>
                 {errorMessage && (

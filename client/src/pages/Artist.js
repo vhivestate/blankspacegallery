@@ -13,7 +13,7 @@ function Artist() {
     <div className='artistCards'>
          {/* Garrett Sectiom */}
          <div className='cards'>
-         <div className="card w-96 glass">
+         <div className="card w-96 bg-gray-900">
       <figure><img src={Garrett} alt="car!"/></figure>
       <div className="card-body">
         <h2 className="card-title justify-center">GARRETT SMITH</h2>
@@ -25,7 +25,7 @@ function Artist() {
 </div>
 {/* Davids section */}
 <div className='cards'>
-<div className="card w-96 glass">
+<div className="card w-96 bg-gray-900">
   <figure><img src={David} alt="car!"/></figure>
   <div className="card-body">
     <h2 className="card-title justify-center">DAVID CARTER</h2>
@@ -37,7 +37,7 @@ function Artist() {
         </div>
 
         <div className='cards'>
-<div className="card w-96 glass">
+<div className="card w-96 bg-gray-900">
   <figure><img src={Campbell} alt="car!"/></figure>
   <div className="card-body">
     <h2 className="card-title justify-center">CAMPBELL</h2>
@@ -51,7 +51,7 @@ function Artist() {
 
     <h1 className='text-center'>GUEST ARTISTS</h1>
     <div className="guest flex flex-wrap justify-center ">
-        <div className="card w-96 bg-base-100 shadow-xl">
+        <div className="card w-96 bg-gray-900 shadow-xl">
             <figure className="px-10 pt-10">
                 <img src={ogSlow} alt="Shoes" className="rounded-xl" />
             </figure>
