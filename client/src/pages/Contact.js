@@ -52,7 +52,7 @@ export const Contact = () => {
 
     return (
         <div className="min-h-screen bg-base-50 flex flex-col items-center justify-center">
-            <h1 className="logo text-white text-center text-4xl">Contact Me</h1>
+            <h1 className="logo text-white text-center text-4xl">CONTACT US</h1>
             <div className="w-full py-6 md:w-4/6 my-6">
                 <form onSubmit={handleSubmit}>
                 <input type="hidden" name="_captcha" value="false"/>
@@ -60,6 +60,15 @@ export const Contact = () => {
             
                 <input type="text" name="email" defaultValue={email} onBlur={handleChange}  placeholder="Email" className="input w-full my-2 bg-white" />
             
+                <select className="select w-full  bg-white">
+                <option disabled selected>Inquiry Type?</option>
+                    <option>Guest Tattoo Artist</option>
+                    <option>Gallery</option>
+                    <option>Film</option>
+                    <option>Photography</option>
+                </select>
+
+
                 <textarea name="message" defaultValue={ message } onBlur={handleChange} className="textarea w-full bg-white my-2" placeholder="Message"></textarea>
                 {errorMessage && (
                     <label class="label">

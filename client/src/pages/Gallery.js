@@ -1,11 +1,9 @@
-
-
 import React from 'react'
 
 function Gallery() {
   return (
     <div>
-        <h1> NO UPCOMING EXIBITS</h1>
+        <h1> Community-driven tattoo studio and fine art gallery rolled into one. </h1>
     </div>
   )
 }

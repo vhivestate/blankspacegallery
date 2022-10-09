@@ -1,6 +1,7 @@
 import React from 'react'
 import Garrett from '../assets/avatar.jpg'
 import David from '../assets/avatar2.jpg'
+import Campbell from '../assets/campbell.jpg'
 import ogSlow from '../assets/og-slowdeath.jpg'
 import { Link } from 'react-router-dom';
 
@@ -14,11 +15,17 @@ function Home() {
     <div className="hero min-h-screen bg-center" style={{ backgroundImage: `url("https://sat02pap005files.storage.live.com/y4mHv88zFNH6o94bbmy8fQn0idIU4fQxiLc3kjJcYB0PdmcbO02_E6rGqCcbaXTLQZrrFqlkygusIgqBxz5LHqtz00t6DSu7DsHu6TNJHKoMaBrBVVCcd8PIVHXgGLgbG2xBAV4p599PV-VxDq7-p4Uv72ekJMm-rEnwAw-6J4RYDp8JrjSDjYCXChVWwZR4_dI?width=768&height=1024&cropmode=none")` }}>
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
-        <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">Hello there</h1>
-          <p className="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-          <button className="btn btn-active btn-ghost"> <a href='#about'>ABOUT US</a></button>
+        <div className="max-w-md space-x-4">
+          <h1 className="mb-5 text-5xl font-bold">BLANK SPACE GALLERY</h1>
+          <p className="mb-5">Bridging the gap between tattoo and fine art.
+</p>
+          <button className="btn btn-active btn-ghost space-x-4"> <a href='#about'>TATTOO </a></button>
 
+          <div className='pt-3'>
+          <button className="btn btn-active btn-ghost hover:bg-gray-400"><Link to={'/gallery'}>fine art</Link></button>
+          </div>
+      
+ 
         </div>
       </div>
     </div>
@@ -26,7 +33,8 @@ function Home() {
 <h1 id='about'>ABOUT US</h1>
     <div className='cards flex justify-center'>
         <div  className='about w-10/12 rounded-md glass '>
-            <p className='text-center	text-white '>Blank Space is a bridge between the world of tattooing and the walls of a gallery. We aim to merrge these to industries to form a create space that is both thought provoking for the public as well as, theraputic for the clientel. When brought together they fill the black space.
+        <h2 className='text-white'>Meshing the worlds of fine art & tattooing</h2>
+            <p className='text-center	text-white '>Blank Space is a dynamic, community-forward fine art gallery and tattoo studio. We curate thought-provoking works spanning a wide array of subject matter and mediums in a comfortable environment for clientele. Like an empty canvas, Blank Space represents limitless creative potential. 
             </p>
         </div>
         </div>
@@ -63,7 +71,23 @@ function Home() {
       </div>
     </div>
   </div>
+
+  <div className='cards flex justify-center'>
+<div className="card w-10/12 glass">
+  <figure><img src={Campbell} alt="car!"/></figure>
+  <div className="card-body text-white	">
+    <h2 className="card-title justify-center">Campbell</h2>
+   
+    <div className="card-actions justify-center">
+      <button className="btn btn-active btn-ghost hover:bg-gray-400"><Link to={'/david'}>View Portfolio</Link></button>
+      </div>
+      </div>
+    </div>
+  </div>
+
 </div>
+
+
 {/* Guest start */}
 
     <div className="guest">

@@ -12,8 +12,9 @@ function Nav() {
             </label>
             <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             <li><Link to={'/artists'}>Artists</Link></li>
-            <li><Link to={'/guest'}>Guest Artists</Link></li>
-            <li><Link to={'/gallery'}>Gallery</Link></li>
+            <li><Link to={'/booking'}>Booking</Link></li>
+            <li><Link to={'/gallery'}>Gallery Exhibit</Link></li>
+            <li><Link to={'/events'}>Events</Link></li>
             <li><Link to={'/contact'}>Contact</Link></li>
             </ul>
             </div>
