@@ -3,7 +3,7 @@ import Garrett from '../assets/avatar.jpg'
 import David from '../assets/avatar2.jpg'
 import Campbell from '../assets/campbell.jpg'
 import ogSlow from '../assets/og-slowdeath.jpg'
-
+import { Link } from 'react-router-dom';
 
 function Artist() {
   return (
@@ -18,7 +18,7 @@ function Artist() {
       <div className="card-body">
         <h2 className="card-title justify-center">GARRETT SMITH</h2>
       <div className="card-actions justify-center">
-      <button className="btn btn-primary">View Portfolio</button>
+      <button className="btn btn-active btn-ghost hover:bg-gray-400"><Link to={'/garrett'}>View Portfolio</Link></button>
     </div>
   </div>
 </div>
@@ -30,7 +30,7 @@ function Artist() {
   <div className="card-body">
     <h2 className="card-title justify-center">DAVID CARTER</h2>
     <div className="card-actions justify-center">
-              <button className="btn btn-primary">View Portfolio</button>
+    <button className="btn btn-active btn-ghost hover:bg-gray-400"><Link to={'/david'}>View Portfolio</Link></button>
              </div>
              </div>
            </div>
@@ -42,7 +42,7 @@ function Artist() {
   <div className="card-body">
     <h2 className="card-title justify-center">CAMPBELL</h2>
     <div className="card-actions justify-center">
-              <button className="btn btn-primary">View Portfolio</button>
+    <button className="btn btn-active btn-ghost hover:bg-gray-400"><Link to={'/campbell'}>View Portfolio</Link></button>
              </div>
              </div>
            </div>
