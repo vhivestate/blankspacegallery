@@ -29,7 +29,7 @@ function Artist() {
          {/* Garrett Sectiom */}
          <div className='flex flex-wrap justify-center pt-14'>
           <div className="card lg:card-side w-10/12 p-5 glass">
-            <figur className=''><img src={Garrett} alt="Album"/></figur>
+            <figur className='max-w-fit'><img src={Garrett} alt="Album"/></figur>
             <div className="card-body justify-around ">
               <h2 className="card-title">@HAMDOESNTMATTER</h2>
               <div className='card-text'>

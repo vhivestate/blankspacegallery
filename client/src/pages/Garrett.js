@@ -1,6 +1,6 @@
 import React from 'react'
 import { Instagram } from 'react-feather';
-import GarrettPic from '../assets/avatar.jpg'
+import GarrettPic from '../assets/garrettPic.png'
 import Man from '../assets/hamdoesntmatter/man.jpg'
 import Wolf from '../assets/hamdoesntmatter/wolf.jpg'
 import Mary from '../assets/hamdoesntmatter/mary.jpg'
