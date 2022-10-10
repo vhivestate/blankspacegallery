@@ -28,10 +28,6 @@ function Footer() {
             <a href='https://www.instagram.com/blankspacegallery/'><Instagram></Instagram></a>
         </div>
 
-        <div className='copyright'>
-            <p>Copyright © 2022 - All right reserved by Blank Space Gallery LLC </p>
-        </div>
-
     </footer>
     
   )
