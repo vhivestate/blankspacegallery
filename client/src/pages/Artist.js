@@ -87,8 +87,10 @@ function Artist() {
           </div>
             </div>
                 
-                <div className='flex flex-wrap p-3 justify-center'>
+                <div className='flex flex-wrap p-3 justify-center space-x-4'>
                 <button className="btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>  
+                <button className="btn btn-active text-white"><Link to={'/booking'}>Book</Link></button>  
+
                   </div>
                 </div>
             </div>
@@ -139,8 +141,10 @@ function Artist() {
           </div>
             </div>
                 
-                <div className='flex flex-wrap p-3 justify-center'>
-                <button className="btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>  
+                <div className='flex flex-wrap p-3 space-x-4 justify-center'>
+                <button className="btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button> 
+                <button className="btn btn-active text-white"><Link to={'/booking'}>Book</Link></button>  
+ 
                   </div>
                 </div>
             </div>
@@ -193,8 +197,9 @@ function Artist() {
           </div>
             </div>
                 
-                <div className='flex flex-wrap p-3 justify-center'>
-                <button className="btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>  
+                <div className='flex flex-wrap p-3 space-x-4 justify-center'>
+                <button className="btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>
+                <button className="btn btn-active text-white"><Link to={'/booking'}>Book</Link></button>   
                   </div>
                 </div>
             </div>
