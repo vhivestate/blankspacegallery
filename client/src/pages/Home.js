@@ -19,20 +19,16 @@ function Home() {
           <h1 className="mb-5 text-5xl font-bold text-white">BLANK SPACE GALLERY</h1>
           <p className="mb-5">Bridging the gap between tattoo and fine art.</p>
           <button className="btn btn-active btn-ghost space-x-4"> <a href='#about'>TATTOO </a></button>
-
           <button className="btn btn-active btn-ghost hover:bg-gray-400"><Link to={'/gallery'}>fine art</Link></button>
-    
-      
- 
         </div>
       </div>
     </div>
 
 <h1 id='about'>ABOUT US</h1>
     <div className='cards flex flex-wrap justify-center'>
-        <div  className='about w-10/12 rounded-md bg-gray-900 '>
-        <h2 className='text-white'>Meshing the worlds of fine art & tattooing</h2>
-            <p className='text-center	text-white '>Blank Space is a dynamic, community-forward fine art gallery and tattoo studio. We curate thought-provoking works spanning a wide array of subject matter and mediums in a comfortable environment for clientele. Like an empty canvas, Blank Space represents limitless creative potential. 
+        <div  className='about w-10/12 rounded-md bg-white '>
+        <h2 className='text-black font-bold	'>MESHING THE WORLDS OF FINE ART & TATTOOING</h2>
+            <p className='text-center	text-black '>Blank Space is a dynamic, community-forward fine art gallery and tattoo studio. We curate thought-provoking works spanning a wide array of subject matter and mediums in a comfortable environment for clientele. Like an empty canvas, Blank Space represents limitless creative potential. 
             </p>
         </div>
         </div>
@@ -41,11 +37,11 @@ function Home() {
       
     <div id='allArtists' className='allArtists'>
     <h1>ARTISTS</h1>
-    <div className='flex flex-wrap justify-center'>   
+    <div className='flex flex-wrap justify-center text-black'>   
 
          {/* Garrett Sectiom */}
          <div className='flex flex-wrap justify-center pt-14'>
-          <div className="card lg:card-side w-10/12 p-5 glass">
+          <div className="card lg:card-side w-10/12 p-5">
             <figur className=''><img src={Garrett} alt="Album"/></figur>
             <div className="card-body justify-around ">
               <h2 className="card-title">@HAMDOESNTMATTER</h2>
@@ -53,7 +49,7 @@ function Home() {
               <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
                 </div>
                 <div className='flex flex-wrap p-3 justify-center'>
-                <button className="about-btn btn btn-active  text-white">            
+                <button className="about-btn btn btn-active btn-wide text-white">            
                 <a href='https://www.instagram.com/hamdoesntmatter/'>VIEW WORK</a>
                 </button> 
                   </div>
@@ -63,7 +59,7 @@ function Home() {
 
 {/* Davids section */}
     <div className='flex flex-wrap justify-center pt-14'>
-        <div className="card lg:card-side w-10/12 p-5 glass">
+        <div className="card lg:card-side w-10/12 p-5">
           <figur className=''><img src={David} alt="Album"/></figur>
           <div className="card-body justify-around ">
             <h2 className="card-title">@THEPHATDAVE</h2>
@@ -71,7 +67,7 @@ function Home() {
             <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
               </div>
               <div className='flex flex-wrap p-3 justify-center'>
-                <button className="about-btn btn btn-active  text-white">            
+                <button className="about-btn btn btn-active btn-wide text-white">            
                 <a href='https://www.instagram.com/thephatdave/'>VIEW WORK</a>
                 </button>  
                 </div>
@@ -81,7 +77,7 @@ function Home() {
 
 {/* campbell section */}
         <div className='flex flex-wrap justify-center pt-14'>
-        <div className="card lg:card-side w-10/12 p-5 glass">
+        <div className="card lg:card-side w-10/12 p-5">
           <figur className=''><img src={Campbell} alt="Album"/></figur>
           <div className="card-body justify-around ">
             <h2 className="card-title">@_COWGORL</h2>
@@ -89,7 +85,7 @@ function Home() {
             <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
               </div>
               <div className='flex flex-wrap p-3 justify-center'>
-              <button className="about-btn btn btn-active  text-white">            
+              <button className="about-btn btn btn-active btn-wide text-white">            
                 <a href='https://www.instagram.com/_cowgorl/'>VIEW WORK</a>
                 </button>  
                 </div>
@@ -107,15 +103,15 @@ function Home() {
         <div className='artistCards'>
 
         <div className='flex flex-wrap justify-center pt-14'>
-        <div className="card lg:card-side w-10/12 p-5 glass">
+        <div className="card lg:card-side w-10/12 p-5">
           <figur className=''><img src={ogSlow} alt="Album"/></figur>
-          <div className="card-body justify-around ">
+          <div className="card-body justify-around text-black">
             <h2 className="card-title">@OG_SLOWDEATH</h2>
             <div className='card-text'>
             <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
               </div>
               <div className='flex flex-wrap p-3 justify-center'>
-              <button className="about-btn btn btn-active  text-white">            
+              <button className="about-btn btn btn-active btn-wide text-white">            
                 <a href='https://www.instagram.com/og_slowdeath/'>VIEW WORK</a>
                 </button> 
                 </div>

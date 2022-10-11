@@ -29,7 +29,7 @@ function Artist() {
     <div>
     <div className="hero h-96" style={{ backgroundImage: `url("https://placeimg.com/1000/800/arch")` }}>
       <div className="hero-overlay bg-opacity-60"></div>
-      <div className="hero-content text-center text-neutral-content">
+      <div className="hero-content text-center text-white">
         <div className="max-w-md">
           <h1 className="mb-5 text-5xl font-bold text-white">THE ARTISTS</h1>
           <p>Community-driven tattoo studio and fine art gallery. Our artists focus on bridging the gap between tattoos and fine art.</p>
@@ -44,9 +44,9 @@ function Artist() {
 
          {/* Garrett Sectiom */}
          <div className='flex flex-wrap justify-center pt-10'>
-          <div className="card lg:card-side w-10/12 p-5 glass">
+          <div className="card lg:card-side w-10/12 p-5 ">
             <figure className='max-w-fit'><img src={Garrett} alt="Album"/></figure>
-            <div className="card-body justify-around ">
+            <div className="card-body justify-around text-black">
               <h2 className="card-title">
               <a href='https://www.instagram.com/hamdoesntmatter/'><Instagram></Instagram></a>@HAMDOESNTMATTER
               </h2>
@@ -88,7 +88,7 @@ function Artist() {
             </div>
                 
                 <div className='flex flex-wrap p-3 justify-center'>
-                <button className="about-btn btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>  
+                <button className="btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>  
                   </div>
                 </div>
             </div>
@@ -96,9 +96,9 @@ function Artist() {
 
 {/* Davids section */}
 <div className='flex flex-wrap justify-center pt-14'>
-          <div className="card lg:card-side w-10/12 p-5 glass">
+          <div className="card lg:card-side w-10/12 p-5 ">
             <figure className='max-w-fit'><img src={David} alt="Album"/></figure>
-            <div className="card-body justify-around ">
+            <div className="card-body justify-around text-black">
             <h2 className="card-title">
               <a href='https://www.instagram.com/thephatdave/'><Instagram></Instagram></a>@THEPHATDAVE
               </h2>
@@ -140,7 +140,7 @@ function Artist() {
             </div>
                 
                 <div className='flex flex-wrap p-3 justify-center'>
-                <button className="about-btn btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>  
+                <button className="btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>  
                   </div>
                 </div>
             </div>
@@ -148,9 +148,9 @@ function Artist() {
 
 {/* campbell section */}
 <div className='flex flex-wrap justify-center pt-14'>
-          <div className="card lg:card-side w-10/12 p-5 glass">
+          <div className="card lg:card-side w-10/12 p-5 ">
             <figure className='max-w-fit'><img src={Campbell} alt="Album"/></figure>
-            <div className="card-body justify-around ">
+            <div className="card-body justify-around text-black">
               
             <h2 className="card-title">
               <a href='https://www.instagram.com/_cowgorl/'><Instagram></Instagram></a>@_COWGORL
@@ -194,7 +194,7 @@ function Artist() {
             </div>
                 
                 <div className='flex flex-wrap p-3 justify-center'>
-                <button className="about-btn btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>  
+                <button className="btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>  
                   </div>
                 </div>
             </div>
@@ -210,26 +210,26 @@ function Artist() {
         <div className='artistCards'>
 
         <div className='flex flex-wrap justify-center pt-14'>
-        <div className="card lg:card-side w-10/12 p-5 glass">
+        <div className="card lg:card-side w-10/12 p-5 ">
           <figure className=''><img src={ogSlow} alt="Album"/></figure>
-          <div className="card-body justify-around ">
+          <div className="card-body justify-around text-black">
             <h2 className="card-title">@OG_SLOWDEATH</h2>
             <div className='card-text'>
             <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
               </div>
               <div className='flex flex-wrap p-3 justify-center'>
-              <button className="about-btn btn btn-active  text-white"><Link to={'/projects'}>View WORK</Link></button>  
+              <button className="btn btn-active  text-white"><Link to={'/projects'}>View WORK</Link></button>  
                 </div>
               </div>
           </div>
         </div>
 
         <div className="card w-auto	 bg-white text-neutral-content p-14 ">
-        <div className="card-body items-center text-center ">
-          <h2 className="card-title">Want to be part of Blank Space Gallery? </h2>
+        <div className="card-body items-center text-center text-black">
+          <h2 className="card-title ">Want to be part of Blank Space Gallery? </h2>
           <p>To apply for Guest Artist positions please email blankspacegalleryllc@gmail.com</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-active btn-ghost hover:bg-gray-400"><Link to={'/contact'}>Contact</Link></button>
+            <button className="btn btn-active  text-white"><Link to={'/contact'}>Contact</Link></button>
           </div>
         </div>
       </div>
