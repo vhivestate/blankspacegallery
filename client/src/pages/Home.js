@@ -53,7 +53,9 @@ function Home() {
               <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
                 </div>
                 <div className='flex flex-wrap p-3 justify-center'>
-                <button className="about-btn btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>  
+                <button className="about-btn btn btn-active  text-white">            
+                <a href='https://www.instagram.com/hamdoesntmatter/'>VIEW WORK</a>
+                </button> 
                   </div>
                 </div>
             </div>
@@ -69,7 +71,9 @@ function Home() {
             <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
               </div>
               <div className='flex flex-wrap p-3 justify-center'>
-              <button className="about-btn btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>  
+                <button className="about-btn btn btn-active  text-white">            
+                <a href='https://www.instagram.com/thephatdave/'>VIEW WORK</a>
+                </button>  
                 </div>
               </div>
           </div>
@@ -85,7 +89,9 @@ function Home() {
             <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
               </div>
               <div className='flex flex-wrap p-3 justify-center'>
-              <button className="about-btn btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>  
+              <button className="about-btn btn btn-active  text-white">            
+                <a href='https://www.instagram.com/_cowgorl/'>VIEW WORK</a>
+                </button>  
                 </div>
               </div>
           </div>
@@ -109,7 +115,9 @@ function Home() {
             <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
               </div>
               <div className='flex flex-wrap p-3 justify-center'>
-              <button className="about-btn btn btn-active  text-white"><Link to={'/projects'}>View WORK</Link></button>  
+              <button className="about-btn btn btn-active  text-white">            
+                <a href='https://www.instagram.com/og_slowdeath/'>VIEW WORK</a>
+                </button> 
                 </div>
               </div>
           </div>

@@ -4,6 +4,7 @@ import David from '../assets/dave1.png'
 import Campbell from '../assets/campbell.png'
 import ogSlow from '../assets/og-slowdeath.jpg'
 import { Link } from 'react-router-dom';
+import { Instagram } from 'react-feather';
 
 // HAMS TATTOOS
 import Man from '../assets/hamdoesntmatter/man.jpg'
@@ -30,22 +31,25 @@ function Artist() {
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md">
-          <h1 className="mb-5 text-5xl font-bold">THE ARTISTS</h1>
+          <h1 className="mb-5 text-5xl font-bold text-white">THE ARTISTS</h1>
+          <p>Community-driven tattoo studio and fine art gallery. Our artists focus on bridging the gap between tattoos and fine art.</p>
         </div>
       </div>
     </div>
 
         <div id='allArtists' className='allArtists bg-white'>
-        <h1 className='text-center'>RESIDENT ARTISTS</h1>
+        <h1 className='text-center pt-10'>RESIDENT ARTISTS</h1>
 
     <div className='flex flex-wrap justify-center'>   
 
          {/* Garrett Sectiom */}
-         <div className='flex flex-wrap justify-center pt-14'>
+         <div className='flex flex-wrap justify-center pt-10'>
           <div className="card lg:card-side w-10/12 p-5 glass">
-            <figur className='max-w-fit'><img src={Garrett} alt="Album"/></figur>
+            <figure className='max-w-fit'><img src={Garrett} alt="Album"/></figure>
             <div className="card-body justify-around ">
-              <h2 className="card-title">@HAMDOESNTMATTER</h2>
+              <h2 className="card-title">
+              <a href='https://www.instagram.com/hamdoesntmatter/'><Instagram></Instagram></a>@HAMDOESNTMATTER
+              </h2>
               <div className='card-text'>
               <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
                 </div>
@@ -93,9 +97,11 @@ function Artist() {
 {/* Davids section */}
 <div className='flex flex-wrap justify-center pt-14'>
           <div className="card lg:card-side w-10/12 p-5 glass">
-            <figur className='max-w-fit'><img src={David} alt="Album"/></figur>
+            <figure className='max-w-fit'><img src={David} alt="Album"/></figure>
             <div className="card-body justify-around ">
-              <h2 className="card-title">@THEPHATDAVE</h2>
+            <h2 className="card-title">
+              <a href='https://www.instagram.com/thephatdave/'><Instagram></Instagram></a>@THEPHATDAVE
+              </h2>
               <div className='card-text'>
               <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
                 </div>
@@ -143,9 +149,13 @@ function Artist() {
 {/* campbell section */}
 <div className='flex flex-wrap justify-center pt-14'>
           <div className="card lg:card-side w-10/12 p-5 glass">
-            <figur className='max-w-fit'><img src={Campbell} alt="Album"/></figur>
+            <figure className='max-w-fit'><img src={Campbell} alt="Album"/></figure>
             <div className="card-body justify-around ">
-              <h2 className="card-title">@_COWGORL</h2>
+              
+            <h2 className="card-title">
+              <a href='https://www.instagram.com/_cowgorl/'><Instagram></Instagram></a>@_COWGORL
+              </h2>
+
               <div className='card-text'>
               <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
                 </div>
@@ -196,12 +206,12 @@ function Artist() {
 {/* Guest start */}
 
     <div className="guest">
-        <h1>GUEST ARTISTS</h1>
+        <h1 className='text-center'>GUEST ARTISTS</h1>
         <div className='artistCards'>
 
         <div className='flex flex-wrap justify-center pt-14'>
         <div className="card lg:card-side w-10/12 p-5 glass">
-          <figur className=''><img src={ogSlow} alt="Album"/></figur>
+          <figure className=''><img src={ogSlow} alt="Album"/></figure>
           <div className="card-body justify-around ">
             <h2 className="card-title">@OG_SLOWDEATH</h2>
             <div className='card-text'>
@@ -213,6 +223,17 @@ function Artist() {
               </div>
           </div>
         </div>
+
+        <div className="card w-auto	 bg-white text-neutral-content p-14 ">
+        <div className="card-body items-center text-center ">
+          <h2 className="card-title">Want to be part of Blank Space Gallery? </h2>
+          <p>To apply for Guest Artist positions please email blankspacegalleryllc@gmail.com</p>
+          <div className="card-actions justify-end">
+            <button className="btn btn-active btn-ghost hover:bg-gray-400"><Link to={'/contact'}>Contact</Link></button>
+          </div>
+        </div>
+      </div>
+
       </div>
       </div>
     </div>
