@@ -5,12 +5,39 @@
 @import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=Merriweather:wght@700&display=swap');
 
+@font-face {
+  font-family:supreme ;
+  src: url(assets/fonts/Superme-GOx4A.ttf)
+}
+
+@font-face {
+  font-family: matchout;
+  src: url(assets/fonts/MATCHOUT-LIGHT.otf)
+}
+
+@font-face {
+  font-family: Cang ;
+  src: url(assets/fonts/Cangste-9Y8ln.otf);
+}
+
+@font-face {
+  font-family: kros ;
+  src: url(assets/fonts/Krosta-Demo.otf);
+}
+
 #logo {
-  font-family: 'GFS Didot', serif;
-  font-size: 33px;
-  letter-spacing: 7px;
+  font-family: supreme;
+  font-weight: bold;
+  letter-spacing: 3px;
+  font-size: 60px;
+}
+
+.logo-abt {
+  font-family: kros;
+  font-weight: bold;
   color: white;
 }
+
 /* Nav */
 nav {
   position: sticky;

@@ -16,8 +16,8 @@ function Home() {
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="max-w-md space-x-4">
-          <h1 className="mb-5 text-5xl font-bold text-white">BLANK SPACE GALLERY</h1>
-          <p className="mb-5">Bridging the gap between tattoo and fine art.</p>
+          <h1 id='logo' className="mb-5 text-5xl font-bold text-white">BLANK SPACE GALLERY</h1>
+          <p className="logo-abt mb-5">Bridging the gap between tattoo and fine art.</p>
           <button className="btn btn-active btn-ghost space-x-4"> <a href='#about'>TATTOO </a></button>
           <button className="btn btn-active btn-ghost hover:bg-gray-400"><Link to={'/gallery'}>fine art</Link></button>
         </div>
@@ -26,9 +26,9 @@ function Home() {
 
 <h1 id='about'>ABOUT US</h1>
     <div className='cards flex flex-wrap justify-center'>
-        <div  className='about w-10/12 rounded-md bg-white '>
-        <h2 className='text-black font-bold	'>MESHING THE WORLDS OF FINE ART & TATTOOING</h2>
-            <p className='text-center	text-black '>Blank Space is a dynamic, community-forward fine art gallery and tattoo studio. We curate thought-provoking works spanning a wide array of subject matter and mediums in a comfortable environment for clientele. Like an empty canvas, Blank Space represents limitless creative potential. 
+        <div  className='about rounded-md bg-white '>
+        <h2 className='text-black font-bold'>MESHING THE WORLDS OF FINE GALLERY ART & TATTOOING</h2>
+            <p className='text-center	text-black'>Blank Space is a dynamic, community-forward fine art gallery and tattoo studio. We curate thought-provoking works spanning a wide array of subject matter and mediums in a comfortable environment for clientele. Like an empty canvas, Blank Space represents limitless creative potential. 
             </p>
         </div>
         </div>
