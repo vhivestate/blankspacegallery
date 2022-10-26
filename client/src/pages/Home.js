@@ -44,9 +44,9 @@ function Home() {
           <div className="card lg:card-side w-10/12 p-5">
             <figur className=''><img src={Garrett} alt="Album"/></figur>
             <div className="card-body justify-around ">
-              <h2 className="card-title">@HAMDOESNTMATTER</h2>
+              <h2 className="card-title justify-center">@HAMDOESNTMATTER</h2>
               <div className='card-text'>
-              <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
+              {/* <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p> */}
                 </div>
                 <div className='flex flex-wrap p-3 justify-center'>
                 <button className="about-btn btn btn-active btn-wide text-white">            
@@ -62,9 +62,9 @@ function Home() {
         <div className="card lg:card-side w-10/12 p-5">
           <figur className=''><img src={David} alt="Album"/></figur>
           <div className="card-body justify-around ">
-            <h2 className="card-title">@THEPHATDAVE</h2>
+            <h2 className="card-title justify-center">@THEPHATDAVE</h2>
             <div className='card-text'>
-            <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
+            {/* <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p> */}
               </div>
               <div className='flex flex-wrap p-3 justify-center'>
                 <button className="about-btn btn btn-active btn-wide text-white">            
@@ -80,9 +80,9 @@ function Home() {
         <div className="card lg:card-side w-10/12 p-5">
           <figur className=''><img src={Campbell} alt="Album"/></figur>
           <div className="card-body justify-around ">
-            <h2 className="card-title">@_COWGORL</h2>
+            <h2 className="card-title justify-center">@_COWGORL</h2>
             <div className='card-text'>
-            <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
+            {/* <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p> */}
               </div>
               <div className='flex flex-wrap p-3 justify-center'>
               <button className="about-btn btn btn-active btn-wide text-white">            
@@ -121,6 +121,8 @@ function Home() {
       </div>
       </div>
     </div>
+    
+    <div className="divider"></div> 
 
     <div className="card w-auto	 bg-white text-neutral-content  ">
         <div className="card-body items-center text-center text-black">
