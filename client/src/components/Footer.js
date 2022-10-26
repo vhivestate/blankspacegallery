@@ -32,7 +32,7 @@ function Footer() {
       noValidate=""
     >
       <div className="" id="mc_embed_signup_scroll">
-        <h2 className="text-black">Subscribe to Newsletter</h2>
+        <h2 className="text-black">Subscribe to our newsletter</h2>
         <div className="mc-field-group">
           <label htmlFor="mce-EMAIL">
             Email Address <span className="asterisk">*</span>
