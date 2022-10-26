@@ -122,6 +122,17 @@ function Home() {
       </div>
     </div>
 
+    <div className="card w-auto	 bg-white text-neutral-content  ">
+        <div className="card-body items-center text-center text-black">
+          <h2 className="card-title ">Want to be part of Blank Space Gallery? </h2>
+          <p>To apply for Guest Artist positions please email blankspacegalleryllc@gmail.com</p>
+          <div className="card-actions justify-end">
+            <button className="btn btn-active  text-white"><Link to={'/contact'}>Contact</Link></button>
+          </div>
+        </div>
+      </div>
+
+
     </main>
    
   )
