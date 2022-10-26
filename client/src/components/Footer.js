@@ -4,7 +4,7 @@ import { Instagram } from 'react-feather';
 
 function Footer() {
   return (
-    <footer className="footer p-10 bg-[#171d22] text-whitet">
+    <footer className="footer p-10 bg-[#171d22] text-white">
         <div>
 
         <>
