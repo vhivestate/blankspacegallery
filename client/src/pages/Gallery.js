@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Gallery() {
   return (
     <div>
-      <div className="hero h-64" style={{ backgroundImage: `url("https://placeimg.com/1000/800/arch")` }}>
+      <div className="hero h-64" style={{ backgroundImage: `url("https://sat02pap005files.storage.live.com/y4msds2WntU6s13s66IXBa50esCWD5YEDX_92xgqtR6jK5qfS5iLxwNnYQN7X2jzZyZ5-5GCK8OEUXrA2SttbfIutZjGiCMYvjOpmH3cvlsktw59iBuHK9toXDPXxEC0OX-Z8F8YafXOuV67fp1Qhc7M_PfNrt34GS6SV-M0Mxl1-gaBlFEN6o-plsuwy2c7IAw?width=660&height=656&cropmode=none")` }}>
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-white">
         <div className="max-w-md">

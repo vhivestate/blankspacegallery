@@ -26,7 +26,6 @@
 }
 
 #logo {
-  font-family: supreme;
   font-weight: bold;
   letter-spacing: 3px;
   font-size: 60px;
@@ -36,6 +35,27 @@
   font-family: kros;
   font-weight: bold;
   color: white;
+}
+
+
+/* hero */
+.bn4 {
+  background-color: #ffffff;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 0.7em 1.7em;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bn4:hover {
+  opacity: 1;
 }
 
 /* Nav */

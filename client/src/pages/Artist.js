@@ -27,7 +27,7 @@ import Bonsai from '../assets/cowgorl/cg4.jpg'
 function Artist() {
   return (
     <div>
-    <div className="hero h-96" style={{ backgroundImage: `url("https://placeimg.com/1000/800/arch")` }}>
+    <div className="hero h-96" style={{ backgroundImage: `url("https://sat02pap005files.storage.live.com/y4m8hr8ntvvJYwovJRW0tFyeZMs1WENhM8liSRoXsJ_7kj_qcrCiH-YwlzUH9Ucro1HtsXUWNJ1uh4eIaONriPcJ_uhaHiD3p42Eg1411sUp6GzUb4MepyyF8b0bgCRs9bXeMca0nVZcUw7pfNPAKaazQCNghl3-zPyswB84rEDmZx9pZGdX9ZZ8SyuLcCjYGRc?width=660&height=522&cropmode=none")` }}>
       <div className="hero-overlay bg-opacity-60"></div>
       <div className="hero-content text-center text-white">
         <div className="max-w-md">
@@ -89,7 +89,7 @@ function Artist() {
                 
                 <div className='flex flex-wrap p-3 justify-center space-x-4'>
                 <button className="btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>  
-                <button className="btn btn-active text-white"><Link to={'/booking'}>Book</Link></button>  
+                {/* <button className="btn btn-active text-white"><Link to={'/booking'}>Book</Link></button>   */}
 
                   </div>
                 </div>
@@ -143,7 +143,7 @@ function Artist() {
                 
                 <div className='flex flex-wrap p-3 space-x-4 justify-center'>
                 <button className="btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button> 
-                <button className="btn btn-active text-white"><Link to={'/booking'}>Book</Link></button>  
+                {/* <button className="btn btn-active text-white"><Link to={'/booking'}>Book</Link></button>   */}
  
                   </div>
                 </div>
@@ -199,7 +199,7 @@ function Artist() {
                 
                 <div className='flex flex-wrap p-3 space-x-4 justify-center'>
                 <button className="btn btn-active  text-white"><Link to={'/projects'}>View Portfolio</Link></button>
-                <button className="btn btn-active text-white"><Link to={'/booking'}>Book</Link></button>   
+                {/* <button className="btn btn-active text-white"><Link to={'/booking'}>Book</Link></button>    */}
                   </div>
                 </div>
             </div>

@@ -18,8 +18,8 @@ function Home() {
         <div className="max-w-md space-x-4">
           <h1 id='logo' className="mb-5 text-5xl font-bold text-white">BLANK SPACE GALLERY</h1>
           <p className="logo-abt mb-5">Bridging the gap between tattoo and fine art.</p>
-          <button className="btn btn-active btn-ghost space-x-4"> <a href='#about'>TATTOO </a></button>
-          <button className="btn btn-active btn-ghost hover:bg-gray-400"><Link to={'/gallery'}>fine art</Link></button>
+          <button className="bn4 btn btn-active btn-ghost space-x-4 hover:bg-gray-400 "> <a href='#about'>TATTOO </a></button>
+          <button className="bn4 btn btn-active btn-ghost hover:bg-gray-400"><Link to={'/gallery'}>fine art</Link></button>
         </div>
       </div>
     </div>
