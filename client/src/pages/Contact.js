@@ -51,7 +51,7 @@ export const Contact = () => {
     }
 
     return (
-        <div className="min-h-screen bg-base-50 flex flex-col items-center justify-center">
+        <div className="min-h-screen bg-[#313c45] flex flex-col items-center justify-center">
             <h1 className="logo text-white text-center text-4xl">CONTACT US</h1>
             <div className="w-full py-6 md:w-4/6 my-6">
                 <form onSubmit={handleSubmit}>
@@ -76,7 +76,7 @@ export const Contact = () => {
                     </label>
                 )}
                 
-                <input type="submit" className="btn btn-secondary w-full" value={"Submit"}/>
+                <input type="submit" className=" bn6 btn btn-active text-white w-full" value={"Submit"}/>
                 </form>
                 {successMessage && (
                     <div className="alert alert-success shadow-lg my-4">
