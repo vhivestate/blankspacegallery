@@ -106,9 +106,9 @@ function Home() {
         <div className="card lg:card-side w-10/12 p-5">
           <figur className=''><img src={ogSlow} alt="Album"/></figur>
           <div className="card-body justify-around text-black">
-            <h2 className="card-title">@OG_SLOWDEATH</h2>
+            <h2 className="card-title justify-center">@OG_SLOWDEATH</h2>
             <div className='card-text'>
-            <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
+            <p className='min-w-fit'>11/15/22 - 11/30/22</p>
               </div>
               <div className='flex flex-wrap p-3 justify-center'>
               <button className="about-btn btn btn-active btn-wide text-white">            
@@ -121,7 +121,7 @@ function Home() {
       </div>
       </div>
     </div>
-    
+
     <div className="divider"></div> 
 
     <div className="card w-auto	 bg-white text-neutral-content  ">
