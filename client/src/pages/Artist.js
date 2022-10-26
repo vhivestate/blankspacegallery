@@ -218,9 +218,9 @@ function Artist() {
         <div className="card lg:card-side w-10/12 p-5 ">
           <figure className=''><img src={ogSlow} alt="Album"/></figure>
           <div className="card-body justify-around text-black">
-            <h2 className="card-title">@OG_SLOWDEATH</h2>
+            <h2 className="card-title justify-center">@OG_SLOWDEATH</h2>
             <div className='card-text'>
-            <p className='min-w-fit'>Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi</p>
+            <p className='min-w-fit text-center'>Guest upcoming coming dates coming soon!</p>
               </div>
               <div className='flex flex-wrap p-3 justify-center'>
               <button className="btn btn-active  text-white"><Link to={'/projects'}>View WORK</Link></button>  

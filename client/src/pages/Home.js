@@ -108,7 +108,7 @@ function Home() {
           <div className="card-body justify-around text-black">
             <h2 className="card-title justify-center">@OG_SLOWDEATH</h2>
             <div className='card-text'>
-            <p className='min-w-fit'>11/15/22 - 11/30/22</p>
+            <p className='min-w-fit'>Guest upcoming coming dates coming soon!</p>
               </div>
               <div className='flex flex-wrap p-3 justify-center'>
               <button className="about-btn btn btn-active btn-wide text-white">            
